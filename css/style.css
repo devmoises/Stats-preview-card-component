@@ -53,7 +53,7 @@ body{
     font-family: var(--font-family-inter);
     font-weight: 400;
 }
-@media (min-width: 768px){
+@media (min-width: 480px){
     body{
         height: 100vh;
     }
@@ -62,9 +62,9 @@ body{
     max-width: var(--full-width);
     padding: 1.25rem;
 }
-@media (min-width: 768px){
+@media (min-width: 480px){
     .container{
-        width: 80%;
+        width: 500px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -119,7 +119,8 @@ body{
 }
 .analytics__image img{
     display: block;
-    opacity: 0.4;
+    opacity: .73;
+    mix-blend-mode: multiply;
 }
 .analytics__info{
     text-align: center;
@@ -179,7 +180,7 @@ body{
 }
 @media (min-width: 768px){
     .analytics__info p{        
-        padding: 0 5em;
+        padding: 0 4em;
     }
 }
 @media (min-width: 960px){
@@ -218,11 +219,11 @@ body{
         margin-bottom: 0;
     }   
 }
-.insight__item h3{
+.insight__item h2{
     font-weight: var(--font-weight-heading);
 }
 @media (min-width: 960px){
-    .insight__item h3{
+    .insight__item h2{
         text-align: left;
     }
 }
